@@ -1,0 +1,50 @@
+/**
+ * www.realityonweb.com
+ * https://github.com/realityonweb/loader
+ */
+ 
+body > .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+body > .overlay .loader-container {
+  background: #fff;
+  width: 300px;
+  border-radius: 15px;
+  min-height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
+  position: relative;
+  text-align: center;
+}
+body > .overlay .loader-container img {
+  margin-top: 70px;
+}
+
+.no-rgba .overlay {
+  background: #ccc;
+}
+
+.overlay {
+  padding: 40px;
+  background: #fff;
+  position: static;
+  top: initial;
+  left: initial;
+  right: initial;
+  bottom: initial;
+  text-align: center;
+}
+.overlay .loader-container {
+  top: initial;
+  left: initial;
+  margin: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

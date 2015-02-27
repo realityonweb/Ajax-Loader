@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Loader</title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="container">
+<p>Lorum ipsum text is a dummy used in print and web media. Lorum ipsum text is a dummy used in print and web media.Lorum ipsum text is a dummy used in print and web media.Lorum ipsum text is a dummy used in print and web media.Lorum ipsum text is a dummy used in print and web media.Lorum ipsum text is a dummy used in print and web media.</p>
+<input type="button" value="Show Loader" id="loaderBtn">
+<input type="button" value="Show Inline Loader" id="loaderInlineBtn">
+
+<div id="inlineLoader"></div>
+</div>
+
+<!-- JS files are called here at bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="js/main.js"></script>
+<script>
+$('#loaderBtn').click(function(){
+	APP.loader.show();
+});
+$('#loaderInlineBtn').click(function(){
+	APP.loader.show({target: $('#inlineLoader')});
+});
+</script>
+</body>
+
+</html>
