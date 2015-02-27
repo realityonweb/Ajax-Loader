@@ -1,40 +1,30 @@
 ## Ajax Loader
 
-1. Loader on full page with overlay effect
-2. Inline Loader Location specific
+1. Loader with overlay on the page. 
+2. Inline Loader, Location specific
 3. Simple - Just Copy & Paste
+
+#### Usage Options
+```
+  [content]: You can pass some HTML markup, Default is blank.
+  [target] : Location for the Loader can be changed. You can pass any jQuery Element ID. Default is BODY tag with overlay on the page.
+```
 
 ## How to use?
 
-### Ajax Loader for whole page
-
-#### Without any text
+#### With all default properties.
 ```
-$('#loaderBtn').click(function(){
-	APP.loader.show();
-});
+  APP.loader.show();
 ```
 
-#### With some text message
-```
-$('#loaderBtn').click(function(){
-	APP.loader.show({
-		content: "<p>Thanks for your patience!! Data is loading"
-	});
-});
-```
 
-### Ajax Loader for a specific location - Inline Ajax Loader
-
+#### Overriding the default properties.
+You can override either a single or multiple property as per your need.
 ```
-$('#loaderBtn').click(function(){
-	APP.loader.show({
-		target: $("#targetElement")
-	});
-});
+  APP.loader.show({
+    content: "<p>Loading Content.</p>",
+    target: $("#targetElement")
+  });
 ```
 
 Created By: [realityonweb](http://realityonweb.com/)
-
-        
-       
